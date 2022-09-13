@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
  * 2-print_alphabet_x10.c - Function to print lower case alphabets 10x
  *
- *Return: Always 0 (Success)
+ *Return: 0
  */
 void print_alphabet_x10(void)
 {
