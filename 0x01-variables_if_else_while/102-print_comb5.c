@@ -9,27 +9,41 @@
 
 int main(void)
 {
-	int n, m, d1, d2, d3, d4;
+	int num1, num2, num3, num4, numOut1, numOut2;
 
-	for (n = 0; n <= 98; n++)
+	num1 = num2 = num3 = num4 = 48;
+	while (num4 < 58)
 	{
-		for (m = n + 1; m <= 98; m++)
+		num3 = 48;
+		while (num3 < 58)
 		{
-			d1 = n / 10;
-			d2 = n % 10;
-			putchar(d1 + '0');
-			putchar(d2 + '0');
-			putchar(' ');
-			d3 = m / 10;
-			d4 = m % 10;
-			putchar(d3 + '0');
-			putchar(d4 + '0');
-			if (n != 98 || m != 99)
+			num2 = 48;
+			while (num2 < 58)
 			{
-				putchar(',');
-				putchar(' ');
+				num1 = 48;
+				while (num1 < 58)
+				{
+					numOut1 = (num4 * 10) + num3;
+					numOut2 = (num2 * 10) + num1;
+					if (numOut1 < numOut2)
+					{
+						putchar(num4);
+						putchar(num3);
+						putchar(' ');
+						putchar(num2);
+						putchar(num1);
+						if (num4 == 57 && num3 == 56 && num2 == 57 && num1 == 57)
+							break;
+						putchar(',');
+						putchar(' ');
+					}
+					num1++;
+				}
+				num2++;
 			}
+			num3++;
 		}
+		num4++;
 	}
 	putchar('\n');
 	return (0);

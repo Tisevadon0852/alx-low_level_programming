@@ -9,27 +9,28 @@
 
 int main(void)
 {
-	int i;
-	int j;
-	int k;
+	int num1, num2, num3;
 
-	for (k = '0'; k <= '7'; k++)
+	for (num1 = 0; num1 < 10; num1++)
 	{
-		for (i = k + 1; i <= '8'; i++)
+		for (num2 = 1; num2 < 10; num2++)
 		{
-			for (j = i + 1; j <= '9'; j++)
+			for (num3 = 2; num3 < 10; num3++)
 			{
-				putchar(k);
-				putchar(i);
-				putchar(j);
-				if (j < '9' || i < '8' || k < '7')
+				if (num3 > num2 && num2 > num1)
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(num1 + '0');
+					putchar(num2 + '0');
+					putchar(num3 + '0');
+					if (num1 != 7 || num2 != 8)
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
 	}
-
+	putchar('\n');
 	return (0);
 }
