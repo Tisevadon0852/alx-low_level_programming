@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- *main - Printing lower case alphabets
+ * 1-alphabet.c - Function to print lower case alphabets
+ *
  *Return: Always 0 (Success)
  */
 

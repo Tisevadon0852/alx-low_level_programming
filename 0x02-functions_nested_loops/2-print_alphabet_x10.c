@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- *Description - Printing alphabet 10x
+ * 2-print_alphabet_x10.c - Function to print lower case alphabets 10x
+ *
  *Return: Always 0 (Success)
  */
 
