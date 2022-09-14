@@ -1,12 +1,10 @@
 #include "main.h"
 
 /**
- *main - Entry point
- *Description: print the alphabet, in lowercase, followed by a new line
+ *2-print_alphabet_x10.c - Function to print lower case 10x
+ *
  *Return: 0
  */
-
-
 
 void print_alphabet_x10(void)
 {
