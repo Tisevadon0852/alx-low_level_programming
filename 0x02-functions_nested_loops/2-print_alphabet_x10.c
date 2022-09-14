@@ -1,9 +1,13 @@
 #include "main.h"
+
 /**
- * 2-print_alphabet_x10.c - Function to print lower case alphabets 10x
- *
+ *main - Entry point
+ *Description: print the alphabet, in lowercase, followed by a new line
  *Return: 0
  */
+
+
+
 void print_alphabet_x10(void)
 {
 	int i;
