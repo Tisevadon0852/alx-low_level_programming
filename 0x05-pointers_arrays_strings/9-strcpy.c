@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- * _strcpy - function with two arguments
- * @dest: 1st argument char type pointer
- * @src: 2nd argument char type pointer
- *
- * Description: copies the string to an array
- * Return: na
+ * *_strcpy - copy strg to another string
+ * @dest: pointer
+ * @src: poiter
+ * Return: numbers dest
  */
+
 char *_strcpy(char *dest, char *src)
 {
 	int i;
@@ -16,9 +15,6 @@ char *_strcpy(char *dest, char *src)
 	{
 		dest[i] = src[i];
 	}
-	for ( ; i < src[i]; i++)
-	{
-		dest[i] = '\0';
-	}
+	dest[i] = '\0';
 	return (dest);
 }
