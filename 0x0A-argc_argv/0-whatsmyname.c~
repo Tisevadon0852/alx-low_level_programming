@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+/**
+ * main - Program that prints its name
+ * @argc: integer type
+ * @argv: pointer to char type
+ * Return: return 0 if successful
+ */
+
+int main(int argc, char *argv[])
+{
+	int i;
+	
+	for (i = 0; i < argc; i++)
+	{
+		if (argc == 0)
+		{
+			printf("%s\n", argv[i]);
+		}
+		else
+		{
+			break;
+		}
+	}
+	return (0);
+}
